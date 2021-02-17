@@ -3,9 +3,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-
-app.set('views','./views');
-app.set('view engine','pug');
+app.set('view engine','ejs');
 
 let item = []
 
@@ -31,11 +29,11 @@ app.get('/files',(req,res)=>{
 
 app.use('/items',require('./products'));
 
-app.listen(1313,(error)=>{
+app.listen(1212,(error)=>{
     if(error){
         console.log('El puerto esta en uso');
     }
-    console.log('Servidor corriendo en el puerto 1313');
+    console.log('Servidor corriendo en el puerto 1212');
 })
 
 

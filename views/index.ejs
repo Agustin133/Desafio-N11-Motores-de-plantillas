@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Price</th>
+      <th scope="col">Thumbnail</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% array.forEach( function (item){ %>
+        <tr>
+        <td> <%= item.title %></td>
+        <td><%= item.price %></td>
+        <td><img src= <%= item.thumbnail %> style="max-width: 50px"></td>
+        </tr>
+    <% }); %>
+  </tbody>
+</table>

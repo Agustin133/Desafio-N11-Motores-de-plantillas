@@ -1,5 +1,5 @@
 {
-  "name": "Clase11",
+  "name": "Clase11Ejs",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -10,8 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "express-pug": "^1.0.0",
-    "pug": "^3.0.0"
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }
